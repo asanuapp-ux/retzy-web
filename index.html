@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retzy — Consultoría de TI</title>
+  <meta name="description" content="Retzy. Consultoría de TI: nube, desarrollo y dirección de proyectos de alto impacto.">
+  <meta name="theme-color" content="#0A1428">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://retzy.gg">
+  <meta property="og:title" content="Retzy — Consultoría de TI">
+  <meta property="og:description" content="Nube, desarrollo y dirección de proyectos de alto impacto.">
+  <meta property="og:image" content="https://retzy.gg/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(43deg, #0A1428 0%, #0A1428 61.8%, #0D1A33 62%, #0D1A33 100%);
+      font-family: 'Space Grotesk', sans-serif;
+      color: #F7F9FC;
+    }
+    ::selection { background: #1E5BFF; color: #F7F9FC; }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 44px;
+      padding: 80px 32px 40px;
+    }
+    .mark { width: 124px; height: 124px; }
+    h1 {
+      margin: 0;
+      font-size: 38px;
+      font-weight: 700;
+      letter-spacing: 0.32em;
+      margin-right: -0.32em;
+      color: #F7F9FC;
+    }
+    .divider { width: 1px; height: 36px; background: rgba(124, 135, 153, 0.45); }
+    .descriptor {
+      margin: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      letter-spacing: 0.26em;
+      margin-right: -0.26em;
+      color: #7C8799;
+      text-align: center;
+    }
+    footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 28px 40px;
+      flex-wrap: wrap;
+    }
+    footer .copy {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: rgba(124, 135, 153, 0.7);
+    }
+    footer a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #F7F9FC;
+      text-decoration: none;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid rgba(124, 135, 153, 0.4);
+      padding-bottom: 2px;
+      transition: color 180ms ease, border-color 180ms ease;
+    }
+    footer a:hover, footer a:focus-visible {
+      color: #1E5BFF;
+      border-bottom-color: #1E5BFF;
+      outline: none;
+    }
+    @media (max-width: 480px) {
+      .mark { width: 96px; height: 96px; }
+      h1 { font-size: 28px; }
+      main { gap: 36px; }
+      footer { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <svg class="mark" viewBox="0 0 96 96" role="img" aria-label="Retzy">
+      <path d="M26 14 C26 40 48 40 48 58" fill="none" stroke="#1E5BFF" stroke-width="13"/>
+      <path d="M70 14 C70 40 48 40 48 58" fill="none" stroke="#1E5BFF" stroke-width="13"/>
+      <path d="M41.5 56 L54.5 56 L54.5 62 L41.5 74 Z" fill="#1E5BFF"/>
+      <path d="M41.5 78.8 L54.5 66.8 L54.5 86 L41.5 86 Z" fill="#F7F9FC"/>
+    </svg>
+    <h1>RETZY</h1>
+    <div class="divider" role="presentation"></div>
+    <p class="descriptor">CONSULTOR&Iacute;A DE TI</p>
+  </main>
+  <footer>
+    <span class="copy">&copy; 2026 Retzy</span>
+    <a href="mailto:hola@retzy.gg">hola&#64;retzy.gg</a>
+  </footer>
+</body>
+</html>
