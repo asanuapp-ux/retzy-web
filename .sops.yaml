@@ -1,0 +1,5 @@
+# SOPS — aislamiento por proyecto (Fase 10): SOLO la identidad de retzy-web.
+# Nunca añadir recipients de otros proyectos (aislamiento real, no organizacional).
+creation_rules:
+  - path_regex: .*
+    age: age1xq4myu2epxy0s6d7evl8vj3tx6h5sf98xqtdgfsteh827dupwdkq7qfepe
