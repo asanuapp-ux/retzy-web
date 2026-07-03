@@ -1,30 +1,7 @@
 version: 1
-default_sensitivity: sensible
-
-etapa2:
-  simple_max_tokens_est: 2000
-  agentico_keywords: [implementa, refactoriza, migra, despliega, ejecuta,
-                      corrige, crea el repo, multi-archivo]
-  compleja_min_tokens_est: 8000
-  backends:
-    simple:   {tipo: ollama, url: "http://localhost:11434", modelo: "qwen2.5-coder:14b"}
-    media:    {tipo: ollama, url: "http://localhost:11434", modelo: "qwen3-coder:30b"}
-    compleja: {tipo: claude-frontera}
-
-gate:
-  pii_density_max: 3
-  confidence_min: 0.6
-  fail_mode: closed
-
-patrones_sensibles:
-  rutas:
-    - "/data"
-    - "~/.config/sops"
-    - "~/.aws"
-    - "**/*.env"
-    - "**/keys.txt"
-    - "**/*.kdbx"
-  regex:
-    - "AKIA[0-9A-Z]{16}"
-    - "-----BEGIN (OPENSSH|RSA|EC|AGE) "
-    - "AGE-SECRET-KEY-1[0-9A-Z]+"
+# Reclasificado a no-sensible (decisión founder 2026-07-03).
+# Evidencia: sitio estático público (retzy.gg, GitHub Pages), sin JS, sin
+# formularios, sin endpoints, sin datos de cliente. ADR/0001 del repo declara
+# "solo contenido publicable". El piso global (patrones de secretos, rutas
+# sensibles) sigue aplicando — el repo no puede desactivarlo.
+sensitivity: no-sensible
